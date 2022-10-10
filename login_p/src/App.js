@@ -1,14 +1,17 @@
 
 import './App.css';
-import Idiomas from './componentes/idiomas';
 import Cabecera from './componentes/cabecera';
+import Formulario from './componentes/formulario';
+import Footer from './componentes/footer';
+
 
 function App() {
   return (
 
       <div>
       <Cabecera></Cabecera>
-      <Idiomas></Idiomas>
+      <Formulario></Formulario>
+      <Footer></Footer>
       </div>
   );
 }

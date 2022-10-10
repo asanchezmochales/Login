@@ -334,6 +334,7 @@ body {
 }
 .nav__top .registro {
   border-right: 1px solid #fff;
+  padding-right: 0.5rem;
   margin-right: 0.5rem;
 }
 .nav .border-bottom {
@@ -648,10 +649,10 @@ body {
   width: 100%;
   max-width: 90rem;
 }
-/*
+
 .revolucion {
- background: url("../images/bienvenida.jpg") center center/cover;
-}*/
+  /*background: url("../images/bienvenida.jpg") center center/cover;*/
+}
 .revolucion .d-flex {
   flex-direction: column;
   align-items: center;
