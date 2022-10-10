@@ -1,8 +1,9 @@
 import React from 'react';
 import Cabecera from './componentes/nav-bar/cabecera';
+import Footer from './componentes/footer/footer';
 function App() {
   return (
-    <Cabecera></Cabecera>
+    <><Cabecera></Cabecera><Footer></Footer></>
     );
 }
 
