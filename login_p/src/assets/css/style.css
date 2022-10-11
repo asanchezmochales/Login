@@ -921,9 +921,34 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20.5em;
-  margin: 26.5em;
-  margin-left: 70rem;
-  margin-right: 70rem;
-  border-radius: 1.5em;
+  margin: 18em;
+  padding: 18em;
+  min-width: 300px;
+
+}
+.imagenEmprenya{
+text-align: center;
+}
+
+.imagenEmprenya>img{
+  width: 50%;
+}
+
+input{
+  height: 40px;
+  font-size: 25px !important;
+  min-width: 300px;
+
+}
+
+
+.botonIniciar{
+  height: 40px;
+  min-width: 300px;
+  font-size: 25px;
+
+}
+
+input::placeholder{
+  font-size: 20px;
 }

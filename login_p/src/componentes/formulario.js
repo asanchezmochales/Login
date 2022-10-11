@@ -1,41 +1,50 @@
-import React from "react";
+// Render Prop
+import React from 'react';
+import { Formik, Field, ErrorMessage } from 'formik';
+import { Form, FormGroup, Input, Label, Button } from 'reactstrap';
+import { recogerDatosFormulario } from '../servicios/post';
+const Formulario = () => (
+    <Form className='bg-login login'>
+        <div className='imagenEmprenya'>
+        <img src={require('../assets/imagenes/emprenya.png')} alt="" />
+        </div>
+        <FormGroup>
+            <Label
+                for="exampleEmail"
+                hidden
+            >
+                Email
+            </Label>
+            <Input
+                id="exampleEmail"
+                name="email"
+                placeholder="Email"
+                type="text"
+                className='form-control'
+            />
+        </FormGroup>
+        {' '}
+        <FormGroup>
+            <Label
+                for="examplePassword"
+                hidden
+            >
+                Password
+            </Label>
+            <Input
+                id="examplePassword"
+                name="password"
+                placeholder="Password"
+                type="text"
+                className='form-control'
+            />
+        </FormGroup>
+        {' '}
+        <Button className='botonIniciar' onClick={recogerDatosFormulario}>
+            Iniciar
+        </Button>
+    </Form>
+);
 
-
-class Formulario extends React.Component {
-
-
-    
-    render() {
-        return (
-
-
-            <div className="w-100">
-                <div className="m-login__head">
-                    <div className="text-right mx-4 mt-4" style={{ display: "flex", justifyContent: "end" }}>
-                        <img src={require("../assets/imagenes/es.png")} class="a-idioma" data="es" style={{ width: "25px", cursor: "pointer" }} />
-                        <img src={require("../assets/imagenes/en.png")} class="a-idioma" data="en" style={{ width: "25px", cursor: "pointer" }} />
-                    </div>
-                </div >
-                <form>
-                    <div className="bg-login login ">
-                        <img src={require("../assets/imagenes/emprenya.png")} alt="emprenya" />
-                        <div className="">
-                            <input className="" id="user" type="text" placeholder="Email o usuario" name="email" />
-                        </div>
-                        <div className="">
-                            <input className="" id="pass" type="password" placeholder="Password" name="password" />
-                        </div>
-                        <div className="m-login__form-action " style={{ marginTop: "1%" }}>
-                            <button id="subir" className="button-inicio btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air m-login__btn m-login__btn--primary">
-                                Iniciar sesión
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-        );
-    }
-}
 
 export default Formulario;
