@@ -261,6 +261,10 @@ body {
   background: #3c66b9;
 }
 
+.bg-login{
+  background-color: #42b3f7 !important;
+}
+
 .bg-gray {
   background: #eee;
 }
@@ -911,4 +915,15 @@ body {
 .logo--4:hover,
 .logo--5:hover {
   transform: scale(1.1);
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20.5em;
+  margin: 26.5em;
+  margin-left: 70rem;
+  margin-right: 70rem;
+  border-radius: 1.5em;
 }
