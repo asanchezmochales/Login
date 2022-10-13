@@ -2,7 +2,7 @@ import React from "react";
 import '../assets/css/style.css'
 class Cabecera extends React.Component {
     render() {
-        return (
+        return (    
             <nav>
                 <div className='bg-blue'>
                     <div className="nav__top container pY-2 pX-3 d-flex justify-content-between align-items-center">
@@ -10,7 +10,7 @@ class Cabecera extends React.Component {
                         <a href='#' className="mL-auto mR-2 c-white text-decoration-none">Afiliados</a>
                         <div className='registro'>
                             {/*link a registros redirecciones a la direccion de registro*/}
-                            <a href='#' className="mL-auto mR-1 c-white text-decoration-none">Registro</a>
+                            <a href='./registro' className="mL-auto mR-1 c-white text-decoration-none">Registro</a>
                         </div>
                         {/* Link a login, redirecciona a la direccion de login */}
                             <a href="#" className="c-white text-decoration-none">Login</a>
