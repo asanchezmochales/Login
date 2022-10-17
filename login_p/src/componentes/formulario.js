@@ -11,7 +11,7 @@ const Formulario = () => (
         <FormGroup>
             <Label
                 for="exampleEmail"
-                hidden
+                className='labelLogin'
             >
                 Email
             </Label>
@@ -27,7 +27,7 @@ const Formulario = () => (
         <FormGroup>
             <Label
                 for="examplePassword"
-                hidden
+                className='labelLogin'
             >
                 Password
             </Label>
